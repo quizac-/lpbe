@@ -23,6 +23,7 @@
         <td>--set-mclk idx,clock,mV</td><td>Similar to the above but responsible for memory controller. I.e. '1,1000,- 2,2000,975'</td>
     </tr>
 </table>
+
 ```
 Example:
 $ ./lpbe.py --in BIOS_backup_RadeonRX_580_113-4E353BU-O4E_Sapphire_Pulse_8G_Hynix_orig.rom \
