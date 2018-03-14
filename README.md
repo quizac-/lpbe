@@ -7,11 +7,11 @@ option | description
 --in | Input BIOS filename
 --out | New BIOS filename to save to
 --set-vram table_idx,[mclk|idx],strap | table_idx points to VRAM settings for specific memory type. Usually number between 0 and 2 where 1 could be for Samsung and 2 for Hynix, etc
-                                | mclk is memory clock(MHz)
-                                | idx(<0) allows to address VRAM table from the end. -1 points to last entry.
-                                | strap is a string which contains new timings. I.e. 777000000000000022AA1C00B56A6D46C0551017BE8E060C006AE6000C081420EA8900AB030000001B162C31C0313F17. Another value is 'BEST' which picks hex string automatically.
-   --set-sclk idx,clock,mV      | I.e. '4,1150,-', '5,1150,-' '-' skips mV setting
-   --set-mclk idx,clock,mV      | Similar to the above but responsible for memory controller. I.e. '1,1000,- 2,2000,975'
+| mclk is memory clock(MHz)
+| idx(<0) allows to address VRAM table from the end. -1 points to last entry.
+| strap is a string which contains new timings. I.e. 777000000000000022AA1C00B56A6D46C0551017BE8E060C006AE6000C081420EA8900AB030000001B162C31C0313F17. Another value is 'BEST' which picks hex string automatically.
+--set-sclk idx,clock,mV | I.e. '4,1150,-', '5,1150,-' '-' skips mV setting
+--set-mclk idx,clock,mV | Similar to the above but responsible for memory controller. I.e. '1,1000,- 2,2000,975'
 
 ```
 Example:
